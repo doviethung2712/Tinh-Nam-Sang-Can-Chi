@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tính năm Sang Can Chi</title>
+</head>
+<body>
+
+
+<input type="text" id="Namsinh">
+<input type="submit" value="Xem" onclick="kq()">
+<p id="hienthi"></p>
+
+<script>
+    // let nam = document.getElementById('Namsinh').innerText;
+    function kq() {
+        let nam = document.getElementById('Namsinh').value;
+        let hienthi = document.getElementById('hienthi');
+
+
+        if (nam % 60 == 0 || nam % 60 == 10 || nam % 60 == 20 || nam % 60 == 30 || nam % 60 == 40 || nam % 60 == 50) {
+            if (nam % 60 == 0) {
+                hienthi.innerText = ("Canh Thân")
+            } else if (nam % 60 == 10) {
+                hienthi.innerText = ('Canh Ngọ')
+            } else if (nam % 60 == 20) {
+                hienthi.innerText = ('Canh Thìn')
+            } else if (nam % 60 == 30) {
+                hienthi.innerText = ('Canh Dần')
+            } else if (nam % 60 == 40) {
+                hienthi.innerText = ('Canh Tý')
+            } else if (nam % 60 == 50) {
+                hienthi.innerText = ('Canh Tuất')
+            }
+        } else if (nam % 60 == 1 || nam % 60 == 11 || nam % 60 == 21 || nam % 60 == 31 || nam % 60 == 41 || nam % 60 == 51) {
+            if (nam % 60 == 1) {
+                hienthi.innerText = ('Tân Dậu')
+            } else if (nam % 60 == 11) {
+                hienthi.innerText = ('Tân Mùi')
+            } else if (nam % 60 == 21) {
+                hienthi.innerText = ('Tân Tị')
+            } else if (nam % 60 == 31) {
+                hienthi.innerText = ('Tân Mão')
+            } else if (nam % 60 == 41) {
+                hienthi.innerText = ('Tân Sửu')
+            } else if (nam % 60 == 51) {
+                hienthi.innerText = ('Tân Hợi')
+            }
+        } else if (nam % 60 == 2 || nam % 60 == 12 || nam % 60 == 22 || nam % 60 == 32 || nam % 60 == 42 || nam % 60 == 52) {
+            if (nam % 60 == 2) {
+                hienthi.innerText = ("Nhâm Tuất")
+            } else if (nam % 60 == 12) {
+                hienthi.innerText = ('Nhâm Thân')
+            } else if (nam % 60 == 22) {
+                hienthi.innerText = ('Nhâm Ngọ')
+            } else if (nam % 60 == 32) {
+                hienthi.innerText = ('Nhâm Thìn')
+            } else if (nam % 60 == 42) {
+                hienthi.innerText = ('Nhâm Dần')
+            } else if (nam % 60 == 52) {
+                hienthi.innerText = ('Nhâm Tý')
+            }
+        } else if (nam % 60 == 3 || nam % 60 == 13 || nam % 60 == 23 || nam % 60 == 33 || nam % 60 == 43 || nam % 60 == 53) {
+            if (nam % 60 == 3) {
+                hienthi.innerText = ('Quý Hợi')
+            } else if (nam % 60 == 13) {
+                hienthi.innerText = ('Quý Dậu')
+            } else if (nam % 60 == 23) {
+                hienthi.innerText = ('Quý Mùi')
+            } else if (nam % 60 == 33) {
+                hienthi.innerText = ('Quý Tị')
+            } else if (nam % 60 == 43) {
+                hienthi.innerText = ('Quý Mão')
+            } else if (nam % 60 == 53) {
+                hienthi.innerText = ('Quý Sửu')
+            }
+        } else if (nam % 60 == 4 || nam % 60 == 14 || nam % 60 == 24 || nam % 60 == 34 || nam % 60 == 44 || nam % 60 == 54) {
+            if (nam % 60 == 4) {
+                hienthi.innerText = ("Giáp Tý")
+            } else if (nam % 60 == 14) {
+                hienthi.innerText = ('Giáp Tuất')
+            } else if (nam % 60 == 24) {
+                hienthi.innerText = ('Giáp Thân')
+            } else if (nam % 60 == 34) {
+                hienthi.innerText = ('Giáp Ngọ')
+            } else if (nam % 60 == 44) {
+                hienthi.innerText = ('Giáp Thìn')
+            } else if (nam % 60 == 54) {
+                hienthi.innerText = ('Giáp Dần')
+            }
+        } else if (nam % 60 == 5 || nam % 60 == 15 || nam % 60 == 25 || nam % 60 == 35 || nam % 60 == 45 || nam % 60 == 55) {
+            if (nam % 60 == 5) {
+                hienthi.innerText = ('Ất Sửu')
+            } else if (nam % 60 == 15) {
+                hienthi.innerText = ('Ất Hợi')
+            } else if (nam % 60 == 25) {
+                hienthi.innerText = ('Ất Dậu')
+            } else if (nam % 60 == 35) {
+                hienthi.innerText = ('Ất Mùi')
+            } else if (nam % 60 == 45) {
+                hienthi.innerText = ('Ất Tị')
+            } else if (nam % 60 == 55) {
+                hienthi.innerText = ('Ất Mão')
+            }
+        } else if (nam % 60 == 6 || nam % 60 == 16 || nam % 60 == 26 || nam % 60 == 36 || nam % 60 == 46 || nam % 60 == 56) {
+            if (nam % 60 == 6) {
+                alert("Bính Dần")
+            } else if (nam % 60 == 16) {
+                alert('Bính Tý')
+            } else if (nam % 60 == 26) {
+                alert('Bính Tuất')
+            } else if (nam % 60 == 36) {
+                alert('Bính Thân')
+            } else if (nam % 60 == 46) {
+                alert('Bính Ngọ')
+            } else if (nam % 60 == 56) {
+                alert('Bính Thìn')
+            }
+        } else if (nam % 60 == 7 || nam % 60 == 17 || nam % 60 == 27 || nam % 60 == 37 || nam % 60 == 47 || nam % 60 == 57) {
+            if (nam % 60 == 7) {
+                hienthi.innerText = ('Đinh Mão')
+            } else if (nam % 60 == 17) {
+                hienthi.innerText = ('Đinh Sửu')
+            } else if (nam % 60 == 27) {
+                hienthi.innerText = ('Đinh Hợi')
+            } else if (nam % 60 == 37) {
+                hienthi.innerText = ('Đinh Dậu')
+            } else if (nam % 60 == 47) {
+                hienthi.innerText = ('Đinh Mùi')
+            } else if (nam % 60 == 57) {
+                hienthi.innerText = ('Đinh Tị')
+            }
+        } else if (nam % 60 == 8 || nam % 60 == 18 || nam % 60 == 28 || nam % 60 == 38 || nam % 60 == 48 || nam % 60 == 58) {
+            if (nam % 60 == 8) {
+                hienthi.innerText = ("Mậu Thìn")
+            } else if (nam % 60 == 18) {
+                hienthi.innerText = ('Mậu Dần')
+            } else if (nam % 60 == 28) {
+                hienthi.innerText = ('Mậu Tý')
+            } else if (nam % 60 == 38) {
+                hienthi.innerText = ('Mậu Tuất')
+            } else if (nam % 60 == 48) {
+                hienthi.innerText = ('Mậu Thân')
+            } else if (nam % 60 == 58) {
+                hienthi.innerText = ('Mậu Ngọ')
+            }
+        } else if (nam % 60 == 9 || nam % 60 == 19 || nam % 60 == 29 || nam % 60 == 39 || nam % 60 == 49 || nam % 60 == 59) {
+            if (nam % 60 == 9) {
+                hienthi.innerText = ('Kỷ Tỵ')
+            } else if (nam % 60 == 19) {
+                hienthi.innerText = ('Kỷ Mão')
+            } else if (nam % 60 == 29) {
+                hienthi.innerText = ('Kỷ Sửu')
+            } else if (nam % 60 == 39) {
+                hienthi.innerText = ('Kỷ Hợi')
+            } else if (nam % 60 == 49) {
+                hienthi.innerText = ('Kỷ Dậu')
+            } else if (nam % 60 == 59) {
+                hienthi.innerText = ('Kỷ Mùi')
+            }
+        }
+
+
+    }
+</script>
+</body>
+</html>
